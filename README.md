@@ -14,7 +14,7 @@ Then create `playwright.config.ts` file, for example:
 
 ```ts
 import type { PlaywrightTestConfig } from "@playwright/test";
-import { get<CONFIG_NAME>PlaywrightConfig } from "@wpazderski/playwright-config/<CONFIG_NAME>.config.ts";
+import { get<CONFIG_NAME>PlaywrightConfig } from "@wpazderski/playwright-config/<CONFIG_NAME>.config.js";
 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 export default get<CONFIG_NAME>PlaywrightConfig({
@@ -28,7 +28,7 @@ Replace `<CONFIG_NAME>` with chosen config (see [Available configs](#available-c
 
 ```ts
 import type { PlaywrightTestConfig } from "@playwright/test";
-import { getBasePlaywrightConfig } from "@wpazderski/playwright-config/base.config.ts";
+import { getBasePlaywrightConfig } from "@wpazderski/playwright-config/base.config.js";
 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 export default getBasePlaywrightConfig({
