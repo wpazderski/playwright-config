@@ -18,12 +18,13 @@
     },
     "type": "module",
     "exports": {
-        "./*": "./configs/*"
+        "./*": "./dist/*"
     },
     "files": [
-        "configs"
+        "dist"
     ],
     "scripts": {
+        "build": "rimraf ./dist/ && rimraf -g ./node_modules/.tmp/*.tsbuildinfo && tsc -b",
         "lint-check": "eslint ./ --flag unstable_native_nodejs_ts_config --flag unstable_config_lookup_from_file --max-warnings 0",
         "lint-fix": "eslint ./ --flag unstable_native_nodejs_ts_config --flag unstable_config_lookup_from_file --max-warnings 0 --fix",
         "prettier-check": "prettier ./ --check",
@@ -41,6 +42,7 @@
         "eslint": "^9.28.0",
         "npm-run-all": "^4.1.5",
         "prettier": "^3.5.3",
+        "rimraf": "^6.0.1",
         "typescript": "^5.8.3"
     },
     "peerDependencies": {
