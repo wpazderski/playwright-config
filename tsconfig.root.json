@@ -17,5 +17,5 @@
         /* Interop Constraints */
         "isolatedDeclarations": false
     },
-    "include": [".prettierrc.js", "eslint.config.ts"]
+    "include": [".prettierrc.js", "eslint.config.ts", "package.config.ts"]
 }

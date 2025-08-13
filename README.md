@@ -1,4 +1,4 @@
-# playwright-config
+# @wpazderski/playwright-config
 
 Common [Playwright](https://playwright.dev/) configs
 
@@ -44,7 +44,4 @@ Currently only one config is provided - `base`.
 
 ## Related projects
 
-- [@wpazderski/eslint-config](https://github.com/wpazderski/eslint-config),
-- [@wpazderski/typescript-config](https://github.com/wpazderski/typescript-config),
-- [@wpazderski/playwright-utils](https://github.com/wpazderski/playwright-utils),
-- [@wpazderski/configs-utils-example](https://github.com/wpazderski/configs-utils-example) - an example project that shows how to use all configs and utils.
+See [https://pazderski.dev/projects/](https://pazderski.dev/projects/) for other projects that provide various configs, utils, tools and examples.
